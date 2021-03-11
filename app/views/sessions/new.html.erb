@@ -1,0 +1,19 @@
+<h1>Log In!</h1>
+
+<form action="/session" method= "POST">
+    <%=auth_token%>
+
+    <label for="email_address">Email</label>
+    <input type="text" name="user[email_address]" id="email_address" >
+    <br>
+
+    <label for="user_password">Password</label>
+    <input type="password" name= "user[password]" id="user_password" >
+    <br>
+
+    <input type="submit" value="Log in!">
+
+</form>
+<br>
+<a href="<%=new_user_url %>">Or create an account!</a>
+
