@@ -1,0 +1,8 @@
+<h1>Look at all these Bands!</h1>
+<ul>
+    <%@bands.each do |band|%>
+        <li><%=band.name%> <%=button_to "View", band_path(band.id), method: :get %> </li>
+    <%end%>
+</ul>
+
+<%= button_to "New Band", new_band_path, method: :get %>

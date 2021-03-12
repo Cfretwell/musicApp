@@ -1,0 +1,9 @@
+<h1>Editing Band: <%=@band.name.capitalize%></h1>
+
+<%= render "form", band: @band %>
+
+<br>
+
+<%= button_to "Back to all bands", bands_path, method: :get%>
+
+
