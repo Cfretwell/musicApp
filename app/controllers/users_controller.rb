@@ -16,6 +16,8 @@ class UsersController < ApplicationController
         end
     end
 
+    # testing 123
+
     def new
         @user = User.new
         render :new 
